@@ -1,0 +1,90 @@
+#root {
+  max-width: 1280px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+.nav {
+  width: 100vw;
+  background-color: #333;
+  position: fixed; 
+  z-index: 2;
+  
+}
+.nav-links{
+  max-width: 1280px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* gap: 2rem; */
+  padding: 0rem;
+  place-items: center;
+  margin: 0 auto;
+
+}
+
+.nav-links li{
+  cursor: pointer;
+}
+.endears-matara {
+   margin: 0%;
+   /* margin-left: 15px; */
+  font-size:25pt;
+  cursor: pointer;
+}
+
+.nav-links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  
+}
+
+.menu_list {
+  padding: 0px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.menu_link.active {
+  font-weight: bold;
+  padding: 2px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  border-bottom: 2px solid white;
+  /* border-radius: 1rem; */
+}
+
+.menu_list  :hover{
+  font-weight: bold;
+  padding: 0px;
+  color: aliceblue;
+}
+
+
+/* .nav-links  li.active {
+  background-color: #555;
+} */
+
+.nav-links  li:hover {
+  font-weight: bold;
+}
+
+.button_list p{
+  background-color: white;
+  color: black;
+  margin:0px;
+  padding: 5px;
+  padding-left: 20px;  
+  padding-right: 20px;
+  border-radius:1.3rem;
+}
+
+.button_list :hover{
+  background-color: #333;
+  color: white;
+  border: 1px solid white;
+}

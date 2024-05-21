@@ -1,0 +1,80 @@
+.photo-slider-container {
+    width: 100vw; /* Occupy full viewport width */
+    height: 790px; /* Set desired height */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photo-slider {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Smooth transitions */
+  }
+
+
+  .image-wrapper { /* New wrapper for vertical centering */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    transform: translateY(Y-position);
+  }
+  
+  .image-wrapper img {
+    max-width: 100%; /* Prevent image overflow */
+    max-height: 100%;
+    display: block; /* Prevent spacing below image */
+    transform: translateY(Y-position);
+  }
+
+
+
+  /* Navigation Arrows */
+  .prev-slide,
+  .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    z-index: 1; 
+    border-radius: 1rem;
+  }
+  
+  .prev-slide {
+    left: 10px;
+  }
+  
+  .next-slide {
+    right: 10px;
+  }
+  
+  /* Navigation Dots */
+  .navigation-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 75%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: white;
+  }
+
+  .prev-slide {
+    transform: rotate(180deg); /* Rotates 90 degrees clockwise */
+  }

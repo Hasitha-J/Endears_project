@@ -1,0 +1,25 @@
+.Partners {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .Partners-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .Partners-logo {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .Partners-title {
+    font-size: 1.5em;
+  }
+  
+  .eco-message {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

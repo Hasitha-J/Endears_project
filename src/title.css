@@ -1,0 +1,104 @@
+.title-container{
+  position: absolute;
+  margin-top: 50px;
+  width: 100vw;
+  height: 740px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 100vw;
+  margin-top: -20px;
+  color: rgb(255, 255, 255);
+  font-size: 120px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1rem;
+  z-index: 1;
+  position: absolute;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke: 3px black;
+
+}
+
+.title-text{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cap{
+  animation: capannimation 15s 3;
+}
+
+
+.sim {
+  color: white;
+  opacity: 1; 
+  animation: fadeLetters 15s 3;
+}
+
+
+@keyframes capannimation {
+  0% { 
+    opacity: 1;
+    font-size: 120px;
+
+  }
+  19% { 
+    opacity: 1;
+    font-size: 120px;
+  }
+  19.1% { 
+    opacity: 1;
+    font-size: 50px;
+  }
+  30%{
+    opacity: 1;
+    font-size: 45px;
+  }
+  55% {
+    opacity: 1; 
+    font-size: 55px;
+  }
+ 
+ 
+  100% {
+    opacity: 1;
+    font-size: 120px;
+  }
+}
+
+@keyframes fadeLetters {
+  0% { 
+    opacity: 1;
+    font-size: 120px;
+
+  }
+  19% { 
+    opacity: 1;
+    font-size: 120px;
+  }
+  19.1% { 
+    opacity: 1;
+    font-size: 50px;
+  }
+  30%{
+    opacity: 1;
+    font-size: 45px;
+  }
+  55% {
+    opacity: 0.1; 
+    font-size: 45px;
+  }
+ 
+  60% {
+    opacity: 0; 
+    font-size: 1px;
+  }
+  100% {
+    opacity: 0;
+    font-size: 0px;
+  }
+}

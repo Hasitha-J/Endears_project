@@ -1,10 +1,21 @@
 .photo-slider-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 10px;
     width: 100vw; /* Occupy full viewport width */
-    height: 790px; /* Set desired height */
+    max-height: 790px; 
     position: relative;
     overflow: hidden;
   }
   
+  
+@media screen and (max-width: 767px) {
+  .photo-slider-containe {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 5px;
+  }
+}
+
   .photo-slider {
     display: flex;
     transition: transform 1s ease-in-out; /* Smooth transitions */
@@ -17,14 +28,14 @@
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    transform: translateY(Y-position);
+    /* transform: translateY(Y-position); */
   }
   
   .image-wrapper img {
     max-width: 100%; /* Prevent image overflow */
     max-height: 100%;
     display: block; /* Prevent spacing below image */
-    transform: translateY(Y-position);
+    /* transform: translateY(Y-position); */
   }
 
 
@@ -78,3 +89,10 @@
   .prev-slide {
     transform: rotate(180deg); /* Rotates 90 degrees clockwise */
   }
+
+  @media only screen and (max-width: 768px) {
+    .image-wrapper {
+      width: 100%; /* Adjust width as needed for smaller screens */
+    }
+  }
+  

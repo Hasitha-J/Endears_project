@@ -23,7 +23,7 @@ const About = () => {
                 <p>Our commitment to Matara arises from a sincere dedication to address recurring challenges impacting residents. Floods, particularly in the Nilwala river basin, consistently threaten the district. Strong winds disrupt local fishermen's livelihoods, emphasizing the need for tailored solutions. In Matara's diverse terrains, including both wet and dry zones, landslides add to concerns, prompting decisive action. Despite varying climatic conditions, our project aims to empower Matara's resilient community through a sophisticated Climate Information Sharing and Early Warning Dissemination System. </p>
                 <div>
                   <br />
-                  <h3>       AlertNet - Early Warning Dissemination System</h3>
+                  <h3>AlertNet - Early Warning Dissemination System</h3>
                   <p>
                       Envision a seamless transmission of crucial alerts reaching the public effectively. The Early Warning Dissemination System for the Matara District in Sri Lanka acts as a vital bridge between government agencies and the public, enhancing the existing flow of dissemination by increasing efficiency and effectiveness. This system empowers governance to select precise warning levels and target specific public groups, thereby strengthening preparedness and ensuring that timely, pertinent warnings reach the individuals who need them most. By simplifying the process, it ensures that critical information is delivered swiftly and accurately, enhancing the community's overall safety and response capabilities.
                   </p>

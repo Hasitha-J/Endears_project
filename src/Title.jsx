@@ -21,18 +21,18 @@ const Title = () => {
        {isVisible && 
         <div className='title' >
             <p className='title-text'>
-              <cap className="cap">E</cap>
-              <sim className="sim">arly war</sim>
-              <cap className="cap">N</cap>
-              <sim className="sim">ing </sim>
-              <cap className="cap">DE</cap>
-              <sim className="sim">ssimination </sim>
-              <cap className="cap">A</cap>
-              <sim className="sim">nd info</sim>
-              <cap className="cap">R</cap>
-              <sim className="sim">mation </sim>
-              <cap className="cap">S</cap>
-              <sim className="sim">haring platform</sim>
+              <span className="cap">E</span>
+              <span className="sim">arly war</span>
+              <span className="cap">N</span>
+              <span className="sim">ing </span>
+              <span className="cap">DE</span>
+              <span className="sim">ssimination </span>
+              <span className="cap">A</span>
+              <span className="sim">nd info</span>
+              <span className="cap">R</span>
+              <span className="sim">mation </span>
+              <span className="cap">S</span>
+              <span className="sim">haring platform</span>
             </p>
         </div>}
     </div>

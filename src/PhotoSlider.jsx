@@ -11,6 +11,7 @@ import image7 from './assets/image7.jpg';
 
 const PhotoSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [imageWidth, setImageWidth] = useState(0);
 
   // Sample images
   const images = [
@@ -35,19 +36,24 @@ const PhotoSlider = () => {
     );
   };
 
-  // Use useEffect to set up automatic sliding
   useEffect(() => {
     const intervalId = setInterval(nextSlide, 5000); // Change slide every 3 seconds
 
-    // Clear the interval on component unmount
-    return () => clearInterval(intervalId);
+    // Calculate image width based on slider container width
+    const handleResize = () => {
+      setImageWidth(sliderContainerRef.current.offsetWidth);
+    };
+
+    // Call handleResize initially and on window resize
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Clear the interval and resize listener on component unmount
+    return () => {
+      clearInterval(intervalId);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
-
-  // Calculate image width based on slider container width
-  const imageWidth = sliderContainerRef.current
-    ? sliderContainerRef.current.offsetWidth
-    : 0;
-
   return (
     <div className="photo-slider-container" ref={sliderContainerRef} id="home">
 

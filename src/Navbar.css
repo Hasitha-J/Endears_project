@@ -12,6 +12,7 @@
   
 }
 .nav-links{
+
   max-width: 1280px;
   color: white;
   display: flex;
@@ -25,8 +26,49 @@
 }
 
 .nav-links li{
+  /* display: none; */
   cursor: pointer;
 }
+@media (max-width: 1350px) {
+  .nav-links {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  /* .button_list p{
+    display: none;
+  } */
+  
+
+}
+@media (max-width: 1100px) {
+  .nav-links li {
+    display: none;
+  }
+  /* .button_list p{
+    display: none;
+  } */
+  .endears-matara{
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+  }
+
+}
+@media (max-width: 750px) {
+  .nav-links li {
+    display: none;
+  }
+  .button_list p{
+    display: none;
+  }
+  .endears-matara{
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
 .endears-matara {
    margin: 0%;
    /* margin-left: 15px; */
@@ -65,14 +107,15 @@
 }
 
 
-/* .nav-links  li.active {
-  background-color: #555;
-} */
+
 
 .nav-links  li:hover {
   font-weight: bold;
 }
-
+.button_list{
+  margin-left: 25px;
+  padding-left: 20px; 
+}
 .button_list p{
   background-color: white;
   color: black;

@@ -25,9 +25,11 @@ const styles = {
   },
   img1:{
     marginTop: '50px',
-      paddingBottom: '20px',
-    height: '100px',
-    },
+    paddingBottom: '20px',
+    maxHeight: '100px',
+    maxWidth: '100vw',
+},
+
     img2:{
       padding: '20px',
     width: '150px',

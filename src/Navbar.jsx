@@ -84,8 +84,9 @@ function Navbar() {
               ShareNet</a>
             </p>
             <p>
+            <img src={AlertNet}/>AlertNet
               <a href="https://ews.mobilise-srilanka.org/WorkflowEngine/login">
-              <img src={AlertNet}/>AlertNet</a></p>
+              </a></p>
           </ul>
         </div>
       </nav>

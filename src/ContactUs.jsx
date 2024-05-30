@@ -17,7 +17,7 @@ const ContactForm = () => {
     console.log(conFom)
   }
   return (
-    <div className="container">
+    <div className="container" id='contact'>
       <h2 className="">Contact Us</h2>
       <form className="form" onSubmit={onSubmit}>
         <div className="">

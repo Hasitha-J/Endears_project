@@ -80,18 +80,31 @@
  padding-left: 20px;  
  padding-right: 20px;
  border-radius:1.3rem;
+ cursor: pointer;
+
 }
 
-/* .button_list :hover{
-  filter: brightness(0) invert(1);
-  border: 1px solid white;
- } */
+.button_list p img{
+  padding-right: 10px;
+}
+
+/* .button_list p a{
+  display: grid;
+  place-items: center;
+} */
 
 .button_list p:hover{
  background-color: #333;
- color: black;
+ color: white;
  border: 1px solid white;
+
 }
+
+.button_list p:hover > img {
+  filter: brightness(0) invert(1);
+}
+
+
 .mobile-menu{
  position: fixed;
  margin-top: 50px;

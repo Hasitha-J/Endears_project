@@ -63,11 +63,7 @@
 
 .menu_list  :hover{
  font-weight: bold;
-
 }
-
-
-
 
 .nav-links  li:hover {
  font-weight: bold;
@@ -85,9 +81,12 @@
  padding-right: 20px;
  border-radius:1.3rem;
 }
-.button_list :hover{
+
+/* .button_list :hover{
   filter: brightness(0) invert(1);
- }
+  border: 1px solid white;
+ } */
+
 .button_list p:hover{
  background-color: #333;
  color: black;

@@ -2,10 +2,11 @@
   position: absolute;
   margin-top: 50px;
   width: 100vw;
-  height: 740px;
+  height: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: bottom;
+  border: 1px solid white;
 }
 
 .title {
@@ -44,7 +45,7 @@
 
 @media (max-width: 1500px) {
   .title {
-    margin-top: -20px;
+    /* margin-top: -20px; */
     font-size: 80px;
     font-weight: 800;
     text-align: center;
@@ -63,7 +64,7 @@
 }
 @media (max-width: 1250px) {
   .title {
-    margin-top: -170px;
+    /* margin-top: -170px; */
     font-size: 70px;
     font-weight: 800;
     text-align: center;
@@ -84,7 +85,7 @@
 
 @media (max-width: 1000px) {
   .title {
-    margin-top: -300px;
+    /* margin-top: -300px; */
     font-size: 60px;
     font-weight: 800;
     text-align: center;

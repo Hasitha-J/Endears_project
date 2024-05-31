@@ -15,7 +15,7 @@ const ContactForm = () => {
       message: message.value,
     };
 
-    const mailtoLink = `mailto:shbbandara@gmail.com?subject=Contact Us Mail From ${conFom.email}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:shbbandara@gmail.com?subject=Contact Us Mail From ${conFom.email}&body= This message is sending to developer. This still in the developing process${encodeURIComponent(
       `Name: ${conFom.name}\nEmail: ${conFom.email}\n\nMessage:\n${conFom.message}`
     )}`;
 

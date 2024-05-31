@@ -15,7 +15,6 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     padding: '20px',
-    padding: '0', 
   },
   newsContainer: {
     backgroundColor: 'white',
@@ -78,15 +77,16 @@ const styles = {
     left: '50%',
     transform: 'translateX(-50%)', 
   },
-  image:{
-    height: '100%',
-    // width: '100%',
-    // objectFit: 'scale-down',
+  image: {
+    height: 'calc(100% - 90px)',
+    maxHeight: 'calc(100vh - 600px)',
+    maxWidth: 'calc(100% - 50px)', 
+    objectFit: 'scale-down',
     borderRadius: '10px',
   },
    modal: {
     overflowY: 'auto', // Enable vertical scrolling
-    // maxHeight: '80vh', // Set a maximum height for the modal to limit the scrolling area
+    maxHeight: '70vh', // Set a maximum height for the modal to limit the scrolling area
   },
   closeButton: {
     position: 'absolute',
@@ -133,7 +133,7 @@ const News = () => {
                         <div className='modal'>
                             <div className='content' style={styles.content}>
                             <img src ={closeButton} alt="Close" style={styles.closeButton} onClick={() => close()}/>
-                            <h2>Demonstration of the Early Warning Dissemination System and Climate Information Sharing Platform (ENDEARS - Matara)</h2>
+                            <h2>Demonstration of the ENDEARS Platform</h2>
                                 <p>05.04.2024 </p>
                                 <p>IWMI organized a workshop on April 5, 2024, at Solis Hotel Matara, aiming to provide training on the Climate Information Sharing and Early Warning Platform. This platform is a component of the "Project to Enhance the Process and Capacity of Climate Information Sharing for the Implementation of the National Adaptation Plan of Sri Lanka." The workshop, which ran from 9:00 am to 5:00 pm, saw the participation of 50 officials, including the District Secretary of Matara, various officials from the Matara district secretariat, district engineers, and representatives from organizations such as the District Disaster Management Unit, NBRO, RDA, UDA, Central Environmental Authority, Meteorological Department, LUPPD, Department of Agrarian Development, Department of Fisheries and Aquatic Resources, Survey Department, Police, Sri Lanka Navy, and other pertinent entities.</p>
                                 <img src={work2} alt="workshop images 2" style={styles.image}/>

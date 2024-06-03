@@ -5,8 +5,7 @@ import work2 from './assets/workshop2.jpg';
 import closeButton from './assets/close.svg';
 
 const styles = {
-
-
+  
   divContainer: {
     // width: '100vw',
     backgroundColor: 'white',
@@ -18,7 +17,7 @@ const styles = {
   },
   newsContainer: {
     backgroundColor: 'white',
-    // width: '100vw',
+    width: '100vw',
     display: 'flex',
     justifyContent: 'center', // Center the visible cards
     overflowX: 'auto', // Allow horizontal scrolling
@@ -38,7 +37,6 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     fontSize: '20px',
-    
   },
   title: {
     color: '#333',
@@ -64,7 +62,8 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    overflowY: 'scroll',
+    overflowY: 'auto',
+
   },
   button: {
     position: 'absolute',
@@ -78,16 +77,15 @@ const styles = {
     left: '50%',
     transform: 'translateX(-50%)', 
   },
-  image: {
-    height: 'calc(100% - 90px)',
-    maxHeight: 'calc(100vh - 600px)',
-    maxWidth: 'calc(100% - 50px)', 
-    objectFit: 'scale-down',
+  image:{
+    height: '100%',
+    // width: '100%',
+    objectFit: 'cover',
     borderRadius: '10px',
   },
    modal: {
     overflowY: 'auto', // Enable vertical scrolling
-    maxHeight: '70vh', // Set a maximum height for the modal to limit the scrolling area
+    // maxHeight: '80vh', // Set a maximum height for the modal to limit the scrolling area
   },
   closeButton: {
     position: 'absolute',

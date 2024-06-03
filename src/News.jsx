@@ -80,7 +80,7 @@ const styles = {
   image:{
     height: '100%',
     // width: '100%',
-    objectFit: 'cover',
+    objectFit: 'scale-down',
     borderRadius: '10px',
   },
    modal: {

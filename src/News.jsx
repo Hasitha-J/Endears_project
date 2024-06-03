@@ -62,7 +62,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    overflowY: 'auto',
+    overflowY: 'scroll',
 
   },
   button: {

@@ -8,7 +8,7 @@ const styles = {
 
 
   divContainer: {
-    width: '100vw',
+    // width: '100vw',
     backgroundColor: 'white',
     display: 'flex',
     flexDirection: 'column',
@@ -18,7 +18,7 @@ const styles = {
   },
   newsContainer: {
     backgroundColor: 'white',
-    width: '100vw',
+    // width: '100vw',
     display: 'flex',
     justifyContent: 'center', // Center the visible cards
     overflowX: 'auto', // Allow horizontal scrolling
@@ -38,6 +38,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     fontSize: '20px',
+    
   },
   title: {
     color: '#333',
@@ -63,7 +64,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-
+    overflowY: 'scroll',
   },
   button: {
     position: 'absolute',

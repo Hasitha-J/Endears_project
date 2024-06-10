@@ -140,7 +140,7 @@ const News = () => {
             <Popup trigger=
                 {<div style={styles.card}>
                 <img src={work2Head} alt="Project Image" style={styles.imageCard} />
-                <p>Introduction of project's objectives and scope</p>
+                <p>Demonstration of the ENDEARS Platform</p>
               </div>} 
                 modal nested>
                 {

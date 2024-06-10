@@ -1,7 +1,9 @@
 import React from "react";
 import Popup from 'reactjs-popup';
 import work1 from './assets/workshop1.jpg';
+import work1Head from './assets/workshop1Head.webp';
 import work2 from './assets/workshop2.jpg';
+import work2Head from './assets/workshop2Head.webp';
 import closeButton from './assets/close.svg';
 
 const styles = {
@@ -19,15 +21,15 @@ const styles = {
     backgroundColor: 'white',
     width: '100vw',
     display: 'flex',
-    justifyContent: 'center', // Center the visible cards
-    overflowX: 'auto', // Allow horizontal scrolling
-    padding: '50px 0px', // Add margin to separate the news cards 
+    justifyContent: 'center', 
+    overflowX: 'auto', 
+    padding: '50px 0px', 
   },
 
   card: {
-    margin: '0 30px', // Add margin for spacing between cards
+    margin: '0 30px', 
     width: '200px',
-    height: '150px',
+    height: '300px',
     backgroundColor: '#333',
     borderRadius: '10px',
     padding: '20px',
@@ -37,7 +39,15 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     fontSize: '20px',
+    flexDirection: 'column',
   },
+  imageCard: {
+    maxWidth: '100%',
+    maxHeight: '50%',
+    borderRadius: '5px',
+    marginBottom: '10px',
+  },
+
   title: {
     color: '#333',
     fontSize: '20px',
@@ -101,7 +111,10 @@ const News = () => {
       <p style={styles.title}>NEWS</p>
       <div style={styles.newsContainer} >
       <Popup trigger=
-                {<div style={styles.card}>Introduction of project's objectives and scope</div>} 
+                {<div style={styles.card}>
+                  <img src={work1Head} alt="Project Image" style={styles.imageCard} />
+                  <p>Introduction of project's objectives and scope</p>
+                </div>} 
                 modal nested>
                 {
                     close => (
@@ -125,7 +138,10 @@ const News = () => {
                 }
             </Popup>
             <Popup trigger=
-                {<div style={styles.card}>Demonstration of the ENDEARS system</div>} 
+                {<div style={styles.card}>
+                <img src={work2Head} alt="Project Image" style={styles.imageCard} />
+                <p>Introduction of project's objectives and scope</p>
+              </div>} 
                 modal nested>
                 {
                     close => (

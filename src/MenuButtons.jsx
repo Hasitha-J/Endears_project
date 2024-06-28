@@ -1,5 +1,8 @@
 import ShareNet from './assets/share.svg';
 import AlertNet from './assets/alert.svg';
+import React from "react";
+import Modal from "./Modal";
+
 
 const styles ={
 divContainer: {
@@ -37,18 +40,35 @@ divContainer: {
 
 
 const ButtonComponent = () => {
+
+  const [open, setOpen] = React.useState(false);
+ 
+  const handleClose = () => {
+      setOpen(false);
+  };
+
+  const handleOpen = () => {
+      setOpen(true);
+  };
+
   return (
     <div style={styles.divContainer}>
         <div style={styles.buttonContainer}>
-            <a href="https://matara.mobilise-srilanka.org/webapp/" style={styles.button}>
-                <img src={ShareNet}  style={styles.image} />
+            <p  style={styles.button} onClick={handleOpen}>
+                <img  src={ShareNet} style={styles.image} />
                  ShareNet
-            </a>
+            </p>
             <a href="https://ews.mobilise-srilanka.org/WorkflowEngine/login" style={styles.button}>
                 <img src={AlertNet} style={styles.image} />
                  AlertNet
             </a>
         </div>
+
+        <Modal isOpen={open} onClose={handleClose}>
+          
+      </Modal>
+        
+      
     </div>
     
   );

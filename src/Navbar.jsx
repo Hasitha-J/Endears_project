@@ -5,6 +5,7 @@ import menu from './assets/menu.svg';
 import close from './assets/close.svg';
 import ShareNet from './assets/share.svg';
 import AlertNet from './assets/alert.svg';
+import Modal from "./Modal";
 
 function Navbar() {
  
@@ -64,6 +65,15 @@ function Navbar() {
     setIsMobileMenuVisible(!isMobileMenuVisible);
   };
 
+  const [open, setOpen] = React.useState(false);
+ 
+  const handleClose = () => {
+      setOpen(false);
+  };
+
+  const handleOpen = () => {
+      setOpen(true);
+  };
 
   return (
     <>
@@ -78,15 +88,16 @@ function Navbar() {
             <li> <Link to="partners" className="menu_link"  spy={true} smooth={true} offset={-50} duration={500} >Partners</Link> </li>    
           </ul>
           <ul className='button_list'>
-            <p>
+            <p onClick={handleOpen}>
             <img src={ShareNet}/>
-              <a href="https://matara.mobilise-srilanka.org/webapp/">
-              ShareNet</a>
+              
+              ShareNet
             </p>
             <p>
-            <img src={AlertNet}/>AlertNet
+            <img src={AlertNet}/>
               <a href="https://ews.mobilise-srilanka.org/WorkflowEngine/login">
-              </a></p>
+              AlertNet</a>
+              </p>
           </ul>
         </div>
       </nav>
@@ -101,7 +112,11 @@ function Navbar() {
         <li> <a href="https://ews.mobilise-srilanka.org/WorkflowEngine/login">AlertNet</a> </li>   
       </ul>
 
-
+     
+      <Modal isOpen={open} onClose={handleClose}>
+          
+      </Modal>
+        
       
     </>
   )

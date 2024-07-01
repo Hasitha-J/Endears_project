@@ -1,5 +1,5 @@
 import React from "react";
-import MyPDF from '/public/Training Manual_Draft_10.10.2022.pdf';
+import MyPDF from '/public/User_Manual _endears_Draft.pdf';
 
 
 const Modal = ({ isOpen, onClose }) => {
